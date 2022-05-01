@@ -20,9 +20,12 @@
 			</p>
 			<table>
 				<tr>
-					
-					<td><input type="submit" id="botao" name="botao" 
-						value="Jogos"></td>
+					<td>
+					<input class="input_data" type="date" id="data"
+						name="data" placeholder="Rodada"
+						value='<c:out value="${jogos.dataRodada }"></c:out>'>
+					</td>
+					<td><input type="submit" id="botao" name="botao" value="Jogos"></td>
 				</tr>
 			</table>
 		</form>
@@ -61,8 +64,8 @@
 				<tbody>
 					<c:forEach var="j" items="${listaJogos }">
 						<tr>
-							<td><c:out value="${j.codigoTimeA }" /></td>
-							<td><c:out value="${j.codigoTimeB }" /></td>
+							<td><c:out value="${j.nomeTimeA }" /></td>
+							<td><c:out value="${j.nomeTimeB }" /></td>
 							<td><c:out value="${j.golsTimeA }" /></td>
 							<td><c:out value="${j.golsTimeB }" /></td>
 							<td><c:out value="${j.data }" /></td>

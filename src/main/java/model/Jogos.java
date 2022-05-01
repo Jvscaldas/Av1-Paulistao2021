@@ -3,9 +3,37 @@ package model;
 public class Jogos {
 
 	private int codigoTimeA;
+	private String nomeTimeA;
+	private String nomeTimeB;
 	private int codigoTimeB;
 	private int golsTimeA;
 	private int golsTimeB;
+	private String dataRodada;
+	
+	public String getDataRodada() {
+		return dataRodada;
+	}
+
+	public void setDataRodada(String dataRodada) {
+		this.dataRodada = dataRodada;
+	}
+
+	public String getNomeTimeA() {
+		return nomeTimeA;
+	}
+
+	public void setNomeTimeA(String nomeTimeA) {
+		this.nomeTimeA = nomeTimeA;
+	}
+
+	public String getNomeTimeB() {
+		return nomeTimeB;
+	}
+
+	public void setNomeTimeB(String nomeTimeB) {
+		this.nomeTimeB = nomeTimeB;
+	}
+
 	private String data;
 
 	public int getCodigoTimeA() {
@@ -50,8 +78,9 @@ public class Jogos {
 
 	@Override
 	public String toString() {
-		return "Jogos [codigoTimeA=" + codigoTimeA + ", codigoTimeB=" + codigoTimeB + ", golsTimeA=" + golsTimeA
-				+ ", golsTimeB=" + golsTimeB + ", data=" + data + "]";
+		return "Jogos [codigoTimeA=" + codigoTimeA + ", nomeTimeA=" + nomeTimeA + ", nomeTimeB=" + nomeTimeB
+				+ ", codigoTimeB=" + codigoTimeB + ", golsTimeA=" + golsTimeA + ", golsTimeB=" + golsTimeB
+				+ ", dataRodada=" + dataRodada + ", data=" + data + "]";
 	}
 
 }
